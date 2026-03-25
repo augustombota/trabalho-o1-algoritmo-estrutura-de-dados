@@ -32,6 +32,20 @@ public class Main {
                         System.out.println("eleminar elemento: " + fila.poll());
                     else
                         System.out.println("A fila está vazia");
+                    break;
+                case 3:
+                    if(! fila.isEmpty())
+                        System.out.println("visualizar o elemento frente: " + fila.peek());
+                    else
+                         System.out.println("A fila está vazia");
+                    break;
+                case 4:
+
+                     if(fila.isEmpty())
+                         System.out.println(" Sim, a fila está vazia");
+                     else
+                         System.out.println("A fila não está vazia ");
+                     break;
             }
         }while (  opcao != 0);
     }
