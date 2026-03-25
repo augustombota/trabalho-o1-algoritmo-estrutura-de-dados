@@ -20,7 +20,7 @@ public class Main {
 
             opcao = buscar.nextInt();
 
-            switch (opcao){
+            switch (opcao) {
                 case 1:
                     System.out.println(" escreva um número: ");
                     pilha.push(buscar.nextInt());
@@ -31,6 +31,20 @@ public class Main {
                         System.out.println("Remover: " + pilha.pop());
                     else
                         System.out.println("A pilha está vazia");
+                    break;
+
+                case 3:
+                    if(! pilha.isEmpty())
+                        System.out.println("visualizar o elemento topo: " + pilha.peek());
+                    else
+                        System.out.println("A pilha está vazia");
+                    break;
+                case 4:
+
+                    if(pilha.isEmpty())
+                        System.out.println(" Sim, a pilha está vazia");
+                    else
+                        System.out.println("A pilha não está vazia ");
                     break;
             }
         }while (opcao != 0);
